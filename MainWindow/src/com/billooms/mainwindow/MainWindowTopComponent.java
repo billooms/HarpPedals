@@ -183,7 +183,10 @@ public final class MainWindowTopComponent extends TopComponent {
     setPedalsForChordButton = new javax.swing.JButton();
     msgLabel = new javax.swing.JLabel();
 
+    setToolTipText(org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.toolTipText")); // NOI18N
+
     org.openide.awt.Mnemonics.setLocalizedText(setPedalsForKeyButton, org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.setPedalsForKeyButton.text")); // NOI18N
+    setPedalsForKeyButton.setToolTipText(org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.setPedalsForKeyButton.toolTipText")); // NOI18N
     setPedalsForKeyButton.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         setPedalsForKeyButtonActionPerformed(evt);
@@ -191,6 +194,7 @@ public final class MainWindowTopComponent extends TopComponent {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(tonicButton, org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.tonicButton.text")); // NOI18N
+    tonicButton.setToolTipText(org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.tonicButton.toolTipText")); // NOI18N
     tonicButton.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         tonicButtonActionPerformed(evt);
@@ -198,6 +202,7 @@ public final class MainWindowTopComponent extends TopComponent {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(v7Button, org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.v7Button.text")); // NOI18N
+    v7Button.setToolTipText(org.openide.util.NbBundle.getMessage(MainWindowTopComponent.class, "MainWindowTopComponent.v7Button.toolTipText")); // NOI18N
     v7Button.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         v7ButtonActionPerformed(evt);

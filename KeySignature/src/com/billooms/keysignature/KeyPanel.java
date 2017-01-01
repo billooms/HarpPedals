@@ -135,10 +135,13 @@ public class KeyPanel extends JPanel implements PropertyChangeListener {
 
     keyPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/billooms/keysignature/icons/keyC.png"))); // NOI18N
     org.openide.awt.Mnemonics.setLocalizedText(keyPicture, org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.keyPicture.text")); // NOI18N
+    keyPicture.setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.keyPicture.toolTipText")); // NOI18N
 
     org.openide.awt.Mnemonics.setLocalizedText(keyLabel, org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.keyLabel.text")); // NOI18N
+    keyLabel.setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.keyLabel.toolTipText")); // NOI18N
 
     scaleCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    scaleCombo.setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.scaleCombo.toolTipText")); // NOI18N
     scaleCombo.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         scaleComboActionPerformed(evt);
@@ -146,6 +149,7 @@ public class KeyPanel extends JPanel implements PropertyChangeListener {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(playButton, org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.playButton.text")); // NOI18N
+    playButton.setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.playButton.toolTipText")); // NOI18N
     playButton.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         playButtonActionPerformed(evt);
@@ -153,6 +157,7 @@ public class KeyPanel extends JPanel implements PropertyChangeListener {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(scaleLabel, org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.scaleLabel.text")); // NOI18N
+    scaleLabel.setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.scaleLabel.toolTipText")); // NOI18N
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
     this.setLayout(layout);

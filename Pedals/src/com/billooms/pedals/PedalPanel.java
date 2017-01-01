@@ -261,30 +261,37 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
     jLabelD.setBackground(new java.awt.Color(255, 255, 255));
     jLabelD.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelD, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelD.text")); // NOI18N
+    jLabelD.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelD.toolTipText")); // NOI18N
 
     jLabelC.setBackground(new java.awt.Color(255, 255, 255));
     jLabelC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelC, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelC.text")); // NOI18N
+    jLabelC.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelC.toolTipText")); // NOI18N
 
     jLabelB.setBackground(new java.awt.Color(255, 255, 255));
     jLabelB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelB, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelB.text")); // NOI18N
+    jLabelB.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelB.toolTipText")); // NOI18N
 
     jLabelE.setBackground(new java.awt.Color(255, 255, 255));
     jLabelE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelE, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelE.text")); // NOI18N
+    jLabelE.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelE.toolTipText")); // NOI18N
 
     jLabelF.setBackground(new java.awt.Color(255, 255, 255));
     jLabelF.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelF, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelF.text")); // NOI18N
+    jLabelF.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelF.toolTipText")); // NOI18N
 
     jLabelG.setBackground(new java.awt.Color(255, 255, 255));
     jLabelG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelG, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelG.text")); // NOI18N
+    jLabelG.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelG.toolTipText")); // NOI18N
 
     jLabelA.setBackground(new java.awt.Color(255, 255, 255));
     jLabelA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
     org.openide.awt.Mnemonics.setLocalizedText(jLabelA, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelA.text")); // NOI18N
+    jLabelA.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jLabelA.toolTipText")); // NOI18N
 
     alternateCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
     alternateCombo.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.alternateCombo.toolTipText")); // NOI18N
@@ -295,15 +302,19 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(playGlissButton, org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.playGlissButton.text")); // NOI18N
+    playGlissButton.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.playGlissButton.toolTipText")); // NOI18N
     playGlissButton.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         playGlissButtonActionPerformed(evt);
       }
     });
 
+    jScrollPane1.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.jScrollPane1.toolTipText")); // NOI18N
+
     textArea.setColumns(10);
     textArea.setRows(4);
     textArea.setText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.textArea.text")); // NOI18N
+    textArea.setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.textArea.toolTipText")); // NOI18N
     jScrollPane1.setViewportView(textArea);
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

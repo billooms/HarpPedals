@@ -149,6 +149,7 @@ public class ChordPanel extends JPanel {
     notesLabel = new javax.swing.JLabel();
 
     setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+    setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.toolTipText")); // NOI18N
 
     rootCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
     rootCombo.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.rootCombo.toolTipText")); // NOI18N
@@ -175,8 +176,10 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(chordLabel, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.chordLabel.text")); // NOI18N
+    chordLabel.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.chordLabel.toolTipText")); // NOI18N
 
     org.openide.awt.Mnemonics.setLocalizedText(add2Button, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add2Button.text")); // NOI18N
+    add2Button.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add2Button.toolTipText")); // NOI18N
     add2Button.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         add2ButtonActionPerformed(evt);
@@ -184,6 +187,7 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(add4Button, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add4Button.text")); // NOI18N
+    add4Button.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add4Button.toolTipText")); // NOI18N
     add4Button.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         add4ButtonActionPerformed(evt);
@@ -191,6 +195,7 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(sus4Button, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.sus4Button.text")); // NOI18N
+    sus4Button.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.sus4Button.toolTipText")); // NOI18N
     sus4Button.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         sus4ButtonActionPerformed(evt);
@@ -198,6 +203,7 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(add6Button, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add6Button.text")); // NOI18N
+    add6Button.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.add6Button.toolTipText")); // NOI18N
     add6Button.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         add6ButtonActionPerformed(evt);
@@ -205,6 +211,7 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(playButton, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.playButton.text")); // NOI18N
+    playButton.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.playButton.toolTipText")); // NOI18N
     playButton.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         playButtonActionPerformed(evt);
@@ -212,6 +219,7 @@ public class ChordPanel extends JPanel {
     });
 
     org.openide.awt.Mnemonics.setLocalizedText(notesLabel, org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.notesLabel.text")); // NOI18N
+    notesLabel.setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.notesLabel.toolTipText")); // NOI18N
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
     this.setLayout(layout);
