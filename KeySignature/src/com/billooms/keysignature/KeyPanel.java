@@ -122,7 +122,8 @@ public class KeyPanel extends JPanel implements PropertyChangeListener {
     playButton = new javax.swing.JButton();
     scaleLabel = new javax.swing.JLabel();
 
-    setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+    setBackground(new java.awt.Color(229, 229, 229));
+    setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.border.title"))); // NOI18N
     setToolTipText(org.openide.util.NbBundle.getMessage(KeyPanel.class, "KeyPanel.toolTipText")); // NOI18N
 
     keyCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));

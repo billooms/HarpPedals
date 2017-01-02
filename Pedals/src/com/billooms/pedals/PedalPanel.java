@@ -171,7 +171,8 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
     jScrollPane1 = new javax.swing.JScrollPane();
     textArea = new javax.swing.JTextArea();
 
-    setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+    setBackground(new java.awt.Color(229, 229, 229));
+    setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.border.title"))); // NOI18N
     setToolTipText(org.openide.util.NbBundle.getMessage(PedalPanel.class, "PedalPanel.toolTipText")); // NOI18N
 
     pedalD.setMajorTickSpacing(1);

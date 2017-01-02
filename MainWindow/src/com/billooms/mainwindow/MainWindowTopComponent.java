@@ -50,8 +50,8 @@ import org.openide.util.NbBundle.Messages;
 )
 @Messages({
   "CTL_MainWindowAction=MainWindow",
-  "CTL_MainWindowTopComponent=HarpPedal Main Window",
-  "HINT_MainWindowTopComponent=This is a HarpPedal Main Window"
+  "CTL_MainWindowTopComponent=HarpPedals Main Window",
+  "HINT_MainWindowTopComponent=This is a HarpPedals Main Window"
 })
 public final class MainWindowTopComponent extends TopComponent {
   

@@ -148,7 +148,8 @@ public class ChordPanel extends JPanel {
     playButton = new javax.swing.JButton();
     notesLabel = new javax.swing.JLabel();
 
-    setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+    setBackground(new java.awt.Color(229, 229, 229));
+    setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.border.title"))); // NOI18N
     setToolTipText(org.openide.util.NbBundle.getMessage(ChordPanel.class, "ChordPanel.toolTipText")); // NOI18N
 
     rootCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -249,7 +250,7 @@ public class ChordPanel extends JPanel {
             .addComponent(triadCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(chordLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        .addGap(0, 28, Short.MAX_VALUE))
+        .addGap(0, 20, Short.MAX_VALUE))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
