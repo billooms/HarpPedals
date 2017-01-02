@@ -339,17 +339,7 @@ public class Pedals {
   public String findChordName() {
     String str = "";
     int pitchMask = getPitchMask();
-    for (Scale scale : Scale.values()) {    // search through the scales first
-      for (int i = 0; i < 12; i++) {
-        if (pitchMask == scale.getChordMask()) {
-          if (!str.isEmpty()) {
-            str += "\n";      // start another line
-          }
-          str += new Note(i).toString2() + " " + scale.getName() + " scale";
-        }
-        pitchMask = rotateLeft(pitchMask);
-      }
-    }
+    str += Scale.getNameByMask(pitchMask);
     for (Seventh seventh : Seventh.values()) {    // search through the Sevenths
       for (int i = 0; i < 12; i++) {
         if (pitchMask == seventh.getChordMask()) {

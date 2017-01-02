@@ -1,5 +1,7 @@
 package com.billooms.keysignature;
 
+import java.util.ArrayList;
+
 /**
  * Define the various scales.
  *
@@ -65,5 +67,56 @@ public enum Scale {
    */
   public String getName() {
     return name;
+  }
+  
+  public boolean isMajor() {
+    switch (this) {
+      case MAJOR:
+        return true;
+      default:
+        return false;
+    }
+  }
+  
+  public static String getNameByMask(int mask) {
+    String str = "";
+    for (Scale scale : Scale.values()) {    // search through the scales first
+      for (int i = 0; i < 12; i++) {
+        if (mask == scale.getChordMask()) {
+          if (!str.isEmpty()) {
+           str += "\n";      // start another line
+          }
+          ArrayList<KeySignature> keySigs = KeySignature.getKeyByNote(i, scale.isMajor());
+          for (int j = 0; j < keySigs.size(); j++) {
+            if (j == 1) {
+              str += "/";
+            }
+            if (scale.isMajor()) {
+              str += keySigs.get(j).getMajorNote().toString2();
+            } else {
+              str += keySigs.get(j).getMinorNote().toString2().toLowerCase();
+            }
+          }
+          str += " " + scale.getName();
+        }
+        mask = rotateLeft(mask);
+      }
+    }
+    return str;
+  }
+  
+  /**
+   * Rotate the given mask to the right and wrap around to bit 12.
+   * 
+   * @param mask mask
+   * @return new mask
+   */
+  private static int rotateLeft(int mask) {
+    int msb = mask & 0b100000000000;    // save bit 12
+    int newMask = (mask << 1) & 0b111111111111;   // shift left and mask off only 12 bits
+    if (msb != 0) {
+      newMask = newMask | 1;    // put the old bit 12 on the far right
+    }
+    return newMask;
   }
 }

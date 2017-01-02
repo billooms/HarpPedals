@@ -170,4 +170,27 @@ public enum KeySignature {
         return false;
     }
   }
+  
+  /**
+   * Get the key signature(s) given the first note of the scale.
+   * 
+   * @param note Note number
+   * @param major indicate if you want a major or minor scale
+   * @return matching key signature (could be two for keys with 5-7 sharps/flats)
+   */
+  public static ArrayList<KeySignature> getKeyByNote(int note, boolean major) {
+    ArrayList<KeySignature> list = new ArrayList<>();
+    for (KeySignature keySig : KeySignature.values()) {
+      if (major) {
+        if (keySig.getMajorNote().getNumber() == note) {
+          list.add(keySig);
+        }
+      } else {
+        if (keySig.getMinorNote().getNumber() == note) {
+          list.add(keySig);
+        }
+      }
+    }
+    return list;
+  }
 }
