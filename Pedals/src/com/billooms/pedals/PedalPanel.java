@@ -76,6 +76,7 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
     jLabelF.setText(pedals.toString(F));
     jLabelG.setText(pedals.toString(G));
     textArea.setText(pedals.findChordName());
+    findAlternates();
   }
 
   /**
@@ -394,59 +395,31 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
   }// </editor-fold>//GEN-END:initComponents
 
   private void changeD(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeD
-    if (pedalD.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(D, SharpFlat.values()[pedalD.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeD
 
   private void changeC(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeC
-    if (pedalC.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(C, SharpFlat.values()[pedalC.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeC
 
   private void changeB(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeB
-    if (pedalB.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(B, SharpFlat.values()[pedalB.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeB
 
   private void changeE(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeE
-    if (pedalE.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(E, SharpFlat.values()[pedalE.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeE
 
   private void changeF(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeF
-    if (pedalF.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(F, SharpFlat.values()[pedalF.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeF
 
   private void changeG(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeG
-    if (pedalG.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(G, SharpFlat.values()[pedalG.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeG
 
   private void changeA(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeA
-    if (pedalA.isFocusOwner()) {
-      alternateCombo.setEnabled(false);
       pedals.setPosition(A, SharpFlat.values()[pedalA.getValue()]);
-      findAlternates();
-    }
   }//GEN-LAST:event_changeA
 
   private void alternateComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alternateComboActionPerformed
