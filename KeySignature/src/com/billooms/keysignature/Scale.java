@@ -69,6 +69,11 @@ public enum Scale {
     return name;
   }
   
+  /**
+   * Determine if this scale is Major or Minor.
+   * 
+   * @return true: major
+   */
   public boolean isMajor() {
     switch (this) {
       case MAJOR:
@@ -78,6 +83,14 @@ public enum Scale {
     }
   }
   
+  /**
+   * Get the name of this scale by the given mask. 
+   * A given mask might represent both a major and minor scale, so two lines may be returned.
+   * For more than 5 sharps/flats, two root notes will be returned separated by a slash.
+   * 
+   * @param mask given note mask
+   * @return string name of the scale (could be empty string)
+   */
   public static String getNameByMask(int mask) {
     String str = "";
     for (Scale scale : Scale.values()) {    // search through the scales first
