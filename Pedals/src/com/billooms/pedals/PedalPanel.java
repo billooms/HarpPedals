@@ -98,9 +98,10 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
     if (options.isEmpty()) {      // should never be empty, but just in case
       alternateCombo.setEnabled(false);   // disable alternateCombo
     } else {
-      for (PedalPosition pedPos : pedals.pedalsForPitchMask(pitchMask)) {
+      for (PedalPosition pedPos : options) {
         alternateCombo.addItem(pedPos.toString());  // add the options to alternateCombo
       }
+      alternateCombo.setSelectedItem(pedals.getPedalPositions().toString());    // select what matches the pedals
       alternateCombo.setEnabled(options.size() > 1);  // don't enable if there is only one
     }
   }
@@ -424,7 +425,9 @@ public class PedalPanel extends JPanel implements PropertyChangeListener {
 
   private void alternateComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alternateComboActionPerformed
     if (alternateCombo.isFocusOwner()) {
-      pedals.setPedals(options.get(alternateCombo.getSelectedIndex()));
+      if ((alternateCombo.getSelectedIndex() < options.size()) && alternateCombo.getSelectedIndex() >= 0) {
+        pedals.setPedals(options.get(alternateCombo.getSelectedIndex()));
+      }
     }
   }//GEN-LAST:event_alternateComboActionPerformed
 
